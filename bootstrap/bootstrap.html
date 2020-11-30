@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head >
+	<meta charset="UTF-8" >
+	<title >Bootstrap</title >
+	<!-- CSS -->
+	<link rel="stylesheet"
+	      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+	      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+	      crossorigin="anonymous" >
+
+	<!-- jQuery and JS bundle w/ Popper.js -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	        crossorigin="anonymous" ></script >
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+	        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+	        crossorigin="anonymous" ></script >
+
+</head >
+<body >
+<div class="container" >
+	<h1 class="h1" >h1</h1 >
+	<h2 class="h2" >h2</h2 >
+	<h3 class="h3" >h3</h3 >
+	<h4 class="h4" >h4</h4 >
+	<h5 class="h5" >h5</h5 >
+	<h6 class="h6" ></h6 >
+	<h1 >문자열 <small >작은 문자열</small ></h1 >
+	<p >문자열
+		<mark >강조</mark >
+	    문자열
+	</p >
+	<blockquote class="blockquote" >
+		<p >동해 물과 백두산이 마르고 닳도</p >
+		<footer class="blockquote-footer" >애국가</footer >
+	</blockquote >
+	<!-- 약어 -->
+	<p >웹 문서는 <abbr title="HyperText Markup Language" >HTML</abbr >로 구성됩니다.</p >
+
+	<dl >
+		<dt >중국요리</dt >
+		<dd >- 짜장면</dd >
+		<dd >- 탕수육</dd >
+		<dt >한식요리</dt >
+		<dd >- 비빔밥</dd >
+		<dd >- 김치찜</dd >
+	</dl >
+
+	<p >HTML 코드: <code >span</code > , <code >section</code ></p >
+	<p >복사는 <kbd >ctrl + c</kbd >, 붙여넣기는 <kbd >ctrl + v</kbd ></p >
+	<pre >
+		동해물과 백두산이
+		마르고 닳도록
+		pre태그는 엔터를 해도 그대로
+		보인답니다 ㅎㅎ
+	</pre >
+
+	<hr >
+	<p style="width: 200px; border: 1px solid black" >
+		aa bb ccc dddd eeeee ffffff ggggggg hhhhhhhh iiiiiiiii jjjjjjjjj
+	</p >
+	<p style="width: 200px; border: 1px solid black" class="text-justify" >
+		aa bb ccc dddd eeeee ffffff ggggggg hhhhhhhh iiiiiiiii jjjjjjjjj
+	</p >
+	<p style="width: 200px; border: 1px solid black" class="text-nowrap" >
+		aa bb ccc dddd eeeee ffffff ggggggg hhhhhhhh iiiiiiiii jjjjjjjjj
+	</p >
+	<p style="width: 200px; border: 1px solid black" class="text-monospace" >
+		aa bb ccc dddd eeeee ffffff ggggggg hhhhhhhh iiiiiiiii jjjjjjjjj
+	</p >
+
+</div >
+<script >
+    for (var i = 1; i < 7; i++) {
+        $(`.h${i}`).text($(`.h${i}`).css('font-size'));
+    }
+</script >
+</body >
+</html >
